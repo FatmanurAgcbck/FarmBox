@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("photos/bg.jpeg");
+}
+#page{
+    background-color: antiquewhite;
+    width: 1000px;
+    margin: auto;
+}
+
+#banner{
+    min-width: 200px;
+    height: 140px;
+    margin: auto;
+}
+
+#logo{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 5px;
+    bottom: 20px;
+    float: left; 
+    
+}
+#sosyal{
+    width: 180px;
+    height: 40px;
+    float: right;
+    position: relative;
+    right: 10px;
+    
+}
+
+#icon{
+    float: right;
+    margin-left:10px ;
+    margin-top: 100px;
+}
+
+#navbar{
+    min-width: 200px;
+    height: 100px;
+    background-color: antiquewhite;
+    margin: auto;
+    
+}
+
+#navbar ul{
+    list-style-type: none;
+    align-items: center;
+}
+
+#navbar ul li{
+    width: 100px;
+    border-width: 3px;
+    border-style: groove;
+    border-radius: 15px;
+    border-color: brown;
+    float: left;
+    padding: 3px;
+    margin-left: 7px;
+    position: relative;
+    top: 100px;
+    left: 70px;
+    text-align: center;
+    box-shadow: 5px 5px 10px black;
+    
+
+}
+
+.kullanici{
+    float: right;
+    position: relative;
+    top: 0px;
+    left: 150px;
+    border-style: groove;
+    border-color: brown;
+    border-width: 2px;
+    border-radius: 15px;
+    padding: 5px;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+article{
+    min-height: 400px;
+    width: 300px;
+}
+
+footer{
+    width: 960px;
+    height: 400px;
+    background-color: rgb(151, 76, 38);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    
+}
+footer div{
+    width: 30%;
+}
+footer p{
+    margin: 0;
+}
+footer p.sol, footer p.orta, footer p.sag{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
