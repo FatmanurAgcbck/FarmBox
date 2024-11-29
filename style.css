@@ -4,6 +4,7 @@
 }
 body{
     background-image: url("photos/bg.jpeg");
+    background-size: cover;
 }
 #page{
     background-color: antiquewhite;
@@ -15,6 +16,9 @@ body{
     min-width: 200px;
     height: 140px;
     margin: auto;
+    position: sticky;
+    top: 0;
+    
 }
 
 #logo{
@@ -41,20 +45,14 @@ body{
     margin-top: 100px;
 }
 
-#navbar{
-    min-width: 200px;
-    height: 100px;
-    background-color: antiquewhite;
-    margin: auto;
-    
-}
 
-#navbar ul{
+
+#banner ul{
     list-style-type: none;
     align-items: center;
 }
 
-#navbar ul li{
+#banner ul li{
     width: 100px;
     border-width: 3px;
     border-style: groove;
@@ -89,13 +87,13 @@ body{
 }
 
 article{
-    min-height: 400px;
+    min-height: 700px;
     width: 300px;
 }
 
 footer{
     width: 960px;
-    height: 400px;
+    height: 300px;
     background-color: rgb(151, 76, 38);
     display: flex;
     justify-content: space-between;
@@ -113,3 +111,41 @@ footer p.sol, footer p.orta, footer p.sag{
     font-weight: bold;
     margin-bottom: 10px;
 }
+
+.carousel {
+    position: relative;
+    left: 200px;
+    top: 100px;
+    width: 600px;
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    display: flex;
+    animation: slide 9s infinite;
+  }
+  
+  .carousel-images img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    22% { transform: translateX(-600px); }
+    44% { transform: translateX(-1200px); }
+    66% { transform: translateX(-1800px); }
+    100%{transform: translate(0);}
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+  .slogan{
+    position: relative;
+    left: 10px;
+    top: 100px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #734a12;
+    width: 900px;
+  }
