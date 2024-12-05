@@ -18,7 +18,7 @@ body{
     position: sticky;
     top: 0;
     background-color: rgb(243, 220, 191);
-
+    z-index: 1;
     
 }
 

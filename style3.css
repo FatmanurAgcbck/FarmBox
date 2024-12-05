@@ -39,14 +39,14 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 1000px;
-    backdrop-filter: blur(10px);
-    transition: backdrop-filter 3s ease-in-out;
+    backdrop-filter: blur(3px);
+    transition: backdrop-filter 5s ease-in-out;
     
 }
 
 .sign-form:hover{
     backdrop-filter: blur(25px); 
-    transition: backdrop-filter 3s ease;
+    transition: backdrop-filter 5s ease;
 }
 
 .sign-title{
@@ -82,7 +82,7 @@ body {
 }
 
 .input-box input:focus{
-    outline: 3px solid rgba(255, 255, 255, 0.3);
+    outline: 3px solid rgba(255, 255, 255, 0.9);
 }
 
 .input-box input::-ms-reveal{
@@ -144,34 +144,39 @@ body {
 
 
 .reklam{
+    animation: background;
+    background-repeat: no-repeat;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
-    
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: -1;
+    background-size: cover;
 }
 
-.reklam-image{
-    display: flex;
-    animation: slide 25s infinite;
-}
 
-.reklam-image img{
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-}
-
-@keyframes slide{
-    0% {transform: translateX(0);}
-    22% {transform: translateX(-50%);}
-    44% {transform: translateX(-100%);}
-    66% {transform: translateX(-150%);}
-    100% {transform: translate(0);}
-    
+@keyframes background {
+    0% {
+        background-image: url(photos/1.jpeg);
+    }
+    25% {
+        background-image: url(photos/2.jpeg);
+    }
+    50% {
+        background-image: url(photos/3.jpeg);
+    }
+    75% {
+        background-image: url(photos/4.jpeg);
+    }
+    100% {
+        background-image: url(photos/1.jpeg);
+    }
 }
